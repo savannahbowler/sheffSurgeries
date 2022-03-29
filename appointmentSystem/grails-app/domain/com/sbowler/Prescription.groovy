@@ -9,6 +9,8 @@ class Prescription {
 	Date dateIssued
 	boolean patientPaying 
 
+	static belongsTo = [doctor:Doctor, patient:Patient]
+
     static constraints = {
 
 	pharmacyName blank:false, nullable:false

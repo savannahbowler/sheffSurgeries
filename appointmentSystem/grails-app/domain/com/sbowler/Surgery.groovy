@@ -10,6 +10,9 @@ class Surgery {
 	String description
 	String openingTime
 
+	static hasMany = [receptionists:Receptionist, doctors:Doctor, nurses:Nurse, patients:Patient, appointments:Appointment]
+
+
     static constraints = {
 
 	name blank:false, nullable:false
