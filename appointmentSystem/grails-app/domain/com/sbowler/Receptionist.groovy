@@ -8,7 +8,8 @@ class Receptionist {
 	String recepPassword
 	String recepPhone
 
-	static belongsTo = [surgery:Surgery]
+	static belongsTo = [Surgery]
+	static hasOne = [surgery:Surgery]
 
     static constraints = {
 

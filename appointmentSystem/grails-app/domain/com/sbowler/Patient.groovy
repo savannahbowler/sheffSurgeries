@@ -10,9 +10,8 @@ class Patient {
 	Date dateRegistered 
 	String patientPhone
 	
-	static belongTo = [Doctor, Surgery]
-	static hasMany = [doctors:Doctor, surgeries:Surgery, prescriptions:Prescription]
-	Appointment appointment
+	static belongTo = [Doctor, Surgery, Appointment]
+	static hasMany = [doctors:Doctor, surgeries:Surgery, prescriptions:Prescription, appointments:Appointment]
 
     static constraints = {
 

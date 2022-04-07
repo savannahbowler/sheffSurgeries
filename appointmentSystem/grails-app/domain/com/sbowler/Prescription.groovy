@@ -9,7 +9,8 @@ class Prescription {
 	Date dateIssued
 	boolean patientPaying 
 
-	static belongsTo = [doctor:Doctor, patient:Patient]
+	static hasOne = [doctor:Doctor]
+	static belongsTo = [Doctor, Patient]
 
     static constraints = {
 
