@@ -4,8 +4,8 @@ class Receptionist {
 
 	String recepName 
 	String recepEmail
-	String recepUsername
-	String recepPassword
+	String username
+	String password
 	String recepPhone
 
 	static belongsTo = [Surgery]
@@ -15,8 +15,8 @@ class Receptionist {
 
 	recepName blank:false, nullable:false
 	recepEmail blank:false, nullable:false, email:true
-	recepUsername blank:false, nullable:false
-	recepPassword blank:false, nullable:false, password:true
+	username blank:false, nullable:false
+	password blank:false, nullable:false, password:true
 	recepPhone blank:false, nullable:false, maxSize:11
     }
 
