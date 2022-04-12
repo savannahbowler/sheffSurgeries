@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
 <style>
 button {
   background-color: #328ba8; 
@@ -37,9 +38,15 @@ text-align: center;
  </div>
 </nav>
 <br/>
-<h2>Welcome To The Surgery Management System</h2>
 <br/>
-<h4>From here you can create new Patients, Nurses, Doctors and Receptionists. You are also able to search patients.</h4>
+<h2>Welcome To The Surgery Management Site</h2>
+<br/>
+<h4>From here you can click on several buttons to add new patients, appointments and prescriptions.</h4>
+<br/>
+<br/>
+<button type="button" width=250px>
+	<g:link controller="appointment" action="create">Appointments</g:link>
+</button>
 <br/>
 <br/>
 <button type="button">
@@ -48,22 +55,7 @@ text-align: center;
 <br/>
 <br/>
 <button type="button">
-	<g:link controller="doctor" action="create">Doctors</g:link>
-</button>
-<br/>
-<br/>
-<button type="button">
-	<g:link controller="nurse" action="create">Nurses</g:link>
-</button>
-<br/>
-<br/>
-<button type="button">
-	<g:link controller="receptionist" action="create">Receptionists</g:link>
-</button>
-<br/>
-<br/>
-<button type="button">
-	<g:link controller="patient" action="advSearch">Search Patients</g:link>
+	<g:link controller="prescription" action="create">Prescriptions</g:link>
 </button>
 <br/>
 <br/>

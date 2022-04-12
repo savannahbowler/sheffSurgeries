@@ -96,4 +96,26 @@ class DoctorController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+def login(){
+
+}
+
+def validate(){
+def user = Doctor.findByEmail(params.email)
+	if (user&&user.password==params.password){
+		session.user=user
+	render view:'home'
+}
+	else{
+		flash.message="Invalid email or password."
+		render view:'login'
+	}
+}
+
+def logout = {
+	session.user=null
+	redirect(uri:'/')
+}
+
 }
