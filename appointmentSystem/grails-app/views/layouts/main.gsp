@@ -12,6 +12,31 @@
     <asset:stylesheet src="application.css"/>
 
     <g:layoutHead/>
+<style>
+button {
+  background-color: #328ba8; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+}
+
+body{
+  background-color: #d3e9f0;
+
+}
+h2{
+text-align: center;
+}
+h4{
+text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -22,9 +47,20 @@
  </div>
 </nav>
 
-<g:recepLoginToggle/>
-<g:docLoginToggle/>
+<button type="button">
+	<g:recepLoginToggle/>
+</button>
+<br/>
+<br/>
+<button type="button">
+	<g:docLoginToggle/>
+</button>
 <g:layoutBody/>
+
+
+
+
+
 
 <div class="footer" role="contentinfo">
     <div class="container-fluid">

@@ -45,20 +45,28 @@ text-align: center;
 <br/>
 <br/>
 <button type="button" width=250px>
-	<g:link controller="appointment" action="create">Appointments</g:link>
+	<g:link controller="appointment" action="index">Show Appointments</g:link>
 </button>
 <br/>
 <br/>
 <button type="button">
-	<g:link controller="patient" action="create">Patients</g:link>
+	<g:link controller="patient" action="index">Show Patients</g:link>
 </button>
 <br/>
 <br/>
 <button type="button">
-	<g:link controller="prescription" action="create">Prescriptions</g:link>
+	<g:link controller="prescription" action="create">Create Prescriptions</g:link>
 </button>
 <br/>
 <br/>
+<button type="button">
+	<g:link controller="prescription" action="index">Show Prescriptions</g:link>
+</button>
+<br/>
+<br/>
+<button type="button">
+	<g:link controller="prescription" action="advSearch">Search Prescriptions</g:link>
+</button>
 </div>
 </body>
 </html>

@@ -8,24 +8,16 @@
 <div class="row">
 	<h1>Surgeries Management System</h1>
 <formset>
-	<legend>Advanced Search for Patients</legend>
+	<legend>Advanced Search for Prescriptions</legend>
 <table>
 	<g:form action="advResults">
 	<tr>
-		<td>Name</td>
-		<td><g:textField name="patientName"/></td>
-	</tr>
-	<tr>
-		<td>Residence</td>
-		<td><g:textField name="patientResidence"/></td>
-	</tr>
-	<tr>
-		<td>Patient ID</td>
-		<td><g:textField name="patientID"/></td>
+		<td>Medicine</td>
+		<td><g:textField name="medicine"/></td>
 	</tr>
 	<tr>
 		<td>Query Type:</td>
-	<td><g:radioGroup name="queryType" labels="['And','Or','Not']" values="['and','or','not']" value="and">
+	<td><g:radioGroup name="queryType" labels="['And','Not']" values="['and','not']" value="and">
 
 ${it.radio}${it.label}
 
@@ -43,5 +35,4 @@ ${it.radio}${it.label}
 </div>
 </body>
 </html>
-
 
